@@ -36,7 +36,7 @@ Linear regression works very well when the relationship between the dependent an
 
 In the above statement, we said that linear regression works very well when there is a linear relationship between the dependent and the independent variable. In real life though that is rarely the case. For introducing non linearity to the model we include higher orders of the dependent variable, we also try various feature interactions. Now the problem with the above approach is that we are introducing more and more complexity to the model and with that overfitting the model.  
 
-<img src="/overfitting.png">  
+<img src="/assets/o.png">  
 
 In the above image we can see that there are two kinds of errors. One is bias error when the model fails to learn the relationship between the dependent and the independent variables and the other is the overfitting error referred to as variance when the model becomes very complex and tries to memorize the training data and in the process fails to generalize. So we should try to maintain a balance between overfitting error and the bias error.  
 
@@ -71,7 +71,8 @@ Ridge regression does not remove correlated features. It includes all the featur
 
 Lasso regression is another type of regression which computes the cost function in a different way. The cost function in case of lasso regression is as below.  
 
-Cost function = <sub>i=1</sub>∑<sup>i=N</sup> (y-yhat)<sup>2</sup> + α (<sub>i=1</sub>∑<sup>i=K</sup> | a<sub>i</sub> |) . Here again, N is the number of samples and K is the number of features based on which the model predicts the dependent variables. The cost function here contains the loss function and the L1 regularization function.  
+Cost function = <sub>i=1</sub>∑<sup>i=N</sup> (y-yhat)<sup>2</sup> + α (<sub>i=1</sub>∑<sup>i=K</sup> | a<sub>i</sub> |) .  
+Here again, N is the number of samples and K is the number of features based on which the model predicts the dependent variables. The cost function here contains the loss function and the L1 regularization function.  
 
 Just like ridge regression we have added another term to the sum of squared errors. It is the sum of the absolute values of the coefficients of the dependent variables multiplied by α. Remember α is a hyper parameter of the model which can take on any value. Lasso regression also works well in case of correlated variables. In case of say 3 correlated variables it will remove 2 of the correlated variables and include only one coefficient in the model. The features that it will remove in case of correlated features is non deterministic in nature i.e. we cannot control which features it will remove in case of correlated features. Lasso regression can also be used as a feature selection tool since we can remove the features whose coefficients are zero in the model. Lasso regression works very well when there are lots of features in the dataset and we want to remove some features.  
 
