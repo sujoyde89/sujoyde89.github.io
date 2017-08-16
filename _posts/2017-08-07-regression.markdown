@@ -1,4 +1,4 @@
-<b><font size = "8">Lets begin with regression!!!!</font></b>  
+<b>Lets begin with regression!!!!</b>  
 
 Think of a house whose price depends only on the number of rooms it has. Think of a car whose price depends on the space it has.
 The above two cases are problems of regression where we can develop a regression model to know the price of the house and the car if we knew the number of rooms of the house and the space of the car.  

@@ -1,10 +1,10 @@
-<b><font size = "8">My favorite algorithm Logistic Regression!!!!</font></b>  
+<b>My favorite algorithm Logistic Regression!!!!</b>  
 
 The beauty of logistic regression is that it can squeeze any number to the range between 0 and 1. Remember the expression of linear regression is yhat = ax + c. The logistic regression builds on this expression. Even though it takes help from this regression expression, it is essentially a classification algorithm.  
 
 When it comes to classification, this is a very powerful algorithm which can give tough competition to the likes of more complex algorithms like bagging, boosting algorithms etc.  
 
-If p is probability of getting a certain class then 1-p becomes the probability of getting the other class and we can express the natural logarithm of ratio of p to (1-p) as a regression equation. The equation can be written as below if we decide to include only two features in the regression equation; x1 and x2 having coefficients as a1 and a2.  
+If p is probability of getting a certain class then 1-p becomes the probability of getting the other class and we can express the natural logarithm of ratio of p to (1-p) as a regression equation. The equation can be written as below if we decide to include only two features in the regression equation; x<sub>1</sub> and x<sub>2</sub> having coefficients as a1 and a2.  
 
 ln (p/(1-p)) = a<sub>1</sub> * x<sub>1</sub> + a<sub>2</sub> * x<sub>2</sub> + c. This equation can be modified as below.
 p/(1-p) = e<sup>a<sub>1</sub> * x<sub>1</sub> + a<sub>2</sub> * x<sub>2</sub> + c</sup>  
