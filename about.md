@@ -1,5 +1,5 @@
 ---
 layout: page
 title: Hire me
-permalink: /about/
+permalink: /https://www.linkedin.com/in/sujoyde89/
 ---
