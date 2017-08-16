@@ -20,3 +20,4 @@ theme:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - History.markdown
