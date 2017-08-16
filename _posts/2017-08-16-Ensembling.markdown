@@ -16,7 +16,7 @@ There are other sophisticated types of ensembling methods which we will get to k
 But first of all let us establish why we would want to do ensembling. Basically all the models have their own strengths, weaknesses and uniqueness. So, when we are doing ensembling, we are essentially trying to create a structure which is more than the sum of its parts. We are trying to create a model which will combine the strengths of the individual models and as a result it will become a stronger model. Ensemble models really shine when we combine models of different types like a random forest (tree based) with a lasso model (linear model).  
 
 For understanding the various types of ensemble, you will have to have a basic idea of decision trees. You can visit the link below to get an idea about decision trees  
-<a href="Decision tree">http://scikit-learn.org/stable/modules/tree.html</a> 
+<a href="Decision tree link">http://scikit-learn.org/stable/modules/tree.html</a> 
 
 We are going to learn about various ensembling models which are:-  
 
