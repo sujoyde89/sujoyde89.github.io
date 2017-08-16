@@ -1,4 +1,4 @@
-Let us talk about ensembling!!  
+<b>Let us talk about ensembling!!!!</b>  
 
 What!! You have never done ensembling before.  
 
@@ -35,14 +35,17 @@ One big problem with bagging is that since it uses all the features for creating
 
 <b>Random Forest</b>  
 
-Random forest is similar to bagging with one major difference. It uses a randomized subset of features for training the different decision trees. It also uses 2/3rd of the data for training the decision tree and uses 1/3rd of the data for estimating the out of fold errors. It also uses averaging in case of continuous values or voting in case of categorical values to get the final prediction.
+Random forest is similar to bagging with one major difference. It uses a randomized subset of features for training the different decision trees.  
+
+It also uses 2/3rd of the data for training the decision tree and uses 1/3rd of the data for estimating the out of fold errors. It also uses averaging in case of continuous values or voting in case of categorical values to get the final prediction.
 Since it uses a randomized subset of the features for training the different decision trees, it produces uncorrelated trees. It is robust to overfitting.  
 
 In fact from my personal experience I have found that random forest is very robust to overfitting.  
 
 <b>Boosting</b>  
 
-Now we come to boosting. Boosting applies on the principle of creating a strong learner based on the mistakes of the weak learners. It again uses a randomized subset of the samples as well as randomized subset of features (The ratio of the samples and the features to be used can be set by us. It can range from 0 to 1. If it is close to 0 then we will be creating a model which will suffer from bias error and if it is close to 1 then we will be creating a model which will be suffering from overfitting or variance error). 
+Now we come to boosting. Boosting applies on the principle of creating a strong learner based on the mistakes of the weak learners. It again uses a randomized subset of the samples as well as randomized subset of features (The ratio of the samples and the features to be used can be set by us. It can range from 0 to 1. If it is close to 0 then we will be creating a model which will suffer from bias error and if it is close to 1 then we will be creating a model which will be suffering from overfitting or variance error).  
+
 In boosting, the weak learners are the decision trees. So after a decision tree is trained, the following decision will give greater weights to the data points which were wrongly classified or wrongly predicted by the first decision tree. The third decision tree will greater weights to the data points misclassified by the second decision tree and so on. The model tries to learn the relationship between the dependent and the independent variables and improves its predictions in subsequent iterations. 
 Since boosting tries to rectify the mistakes done in the previous iteration; it can over fit when the number of iterations is very large because after a certain point of time it will try to memorize the relationship between the dependent and the independent variable and fail to generalize well.  
 
