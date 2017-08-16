@@ -36,7 +36,7 @@ Linear regression works very well when the relationship between the dependent an
 
 In the above statement, we said that linear regression works very well when there is a linear relationship between the dependent and the independent variable. In real life though that is rarely the case. For introducing non linearity to the model we include higher orders of the dependent variable, we also try various feature interactions. Now the problem with the above approach is that we are introducing more and more complexity to the model and with that overfitting the model.  
 
-<img src="/assets/o.png">  
+<img src="/assets/o.png">
 
 In the above image we can see that there are two kinds of errors. One is bias error when the model fails to learn the relationship between the dependent and the independent variables and the other is the overfitting error referred to as variance when the model becomes very complex and tries to memorize the training data and in the process fails to generalize. So we should try to maintain a balance between overfitting error and the bias error.  
 
