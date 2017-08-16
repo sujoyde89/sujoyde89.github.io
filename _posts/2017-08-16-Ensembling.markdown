@@ -51,15 +51,15 @@ In this type of ensemble models we are stacking different types of models on top
 
 Let us say we have a regression problem at our hand. We have two layers of models. The first layer has 3 models say linear, xgboost and random forest and the next layer has lasso. The output of the second layer is normally taken as the final output. Let me try to explain stacking pointwise. Our stacked models would look like below.
 
-<img src="/assets/ensembling_1.png" height="200" width="900">  
+<img src="/assets/ensembling_1.PNG" height="200" width="900">  
 
 In the image above, we divided the training data into 3 parts. Linear regression learned from the first two parts and then predicted on the 3rd part of the training data as well as on the test data which is denoted as Predict 4.  Similarly Predict 2 and Predict 3 are also created, we then create a new feature Output 1 which consists of Predict 3, Predict 2 and Predict 1. Similarly we have also created another test 1 which is the mean of Predict 4, Predict 5 and Predict 6 (Predict 4, Predict 5 and Predict 6 are all predictions on the test data).  
 
 Similarly for our example above we have two other models Xgboost and Random forest. The table for xgboost and random forest would be similar (Just that the outputs would be different)  
  
-<img src="/assets/ensembling_2.png" height="200" width="900">  
+<img src="/assets/ensembling_2.PNG" height="200" width="900">  
 
-<img src="/assets/ensembling_2.png" height="200" width="900"> 
+<img src="/assets/ensembling_3.PNG" height="200" width="900"> 
 
 So we have in particular developed a new set of features for train and test which we will use for the model in the second layer which in our case is Lasso. The next model is trained on the new set of features. The trained model is then used to predict using the data from the new set of features.  
 
