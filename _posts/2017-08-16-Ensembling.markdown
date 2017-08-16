@@ -25,27 +25,28 @@ We are going to learn about various ensembling models which are:-
 •	Boosting  
 •	Stacking
 
-Bagging  
+<b>Bagging</b>  
 
 Bagging stands for bootstrap aggregating. Bagging is an ensemble model of decision trees.  
 
-It generates randomized sample of the dataset and takes 2/3rd of the data for training the decision trees. The remaining 1/3rd of the data is used for estimating the errors of the decision treess. All the features are normally used for training the data which makes the model prone to overfitting because the order of splitting in the trees remains the same as the features are always the same. The bagging model uses averaging in case of continuous values or voting in case of categorical values to get the final prediction.
+It generates randomized sample of the dataset and takes 2/3rd of the data for training the decision trees. The remaining 1/3rd of the data is used for estimating the errors of the decision treess. All the features are normally used for training the data which makes the model prone to overfitting because the order of splitting in the trees remains the same as the features are always the same. The bagging model uses averaging in case of continuous values or voting in case of categorical values to get the final prediction.  
+
 One big problem with bagging is that since it uses all the features for creating the decision trees, it generates correlated trees. Since all the decision trees are learning from the same features, the structure of the trees and the order of splitting would be the same. Let us say one decision tree has made the first split on the feature ‘a’ and the second split on the feature ‘b’ ( a and b being the strongest predictors), the second tree would also make the first split on ‘a’, the second split on ‘b’ and so on. What this is essentially doing is it is magnifying the importance of strongest features while decreasing the importance of weak predictors even more. This is essentially producing correlated trees and making the model prone to overfitting.  
 
-Random Forest  
+<b>Random Forest</b>  
 
 Random forest is similar to bagging with one major difference. It uses a randomized subset of features for training the different decision trees. It also uses 2/3rd of the data for training the decision tree and uses 1/3rd of the data for estimating the out of fold errors. It also uses averaging in case of continuous values or voting in case of categorical values to get the final prediction.
 Since it uses a randomized subset of the features for training the different decision trees, it produces uncorrelated trees. It is robust to overfitting.  
 
 In fact from my personal experience I have found that random forest is very robust to overfitting.  
 
-Boosting  
+<b>Boosting</b>  
 
 Now we come to boosting. Boosting applies on the principle of creating a strong learner based on the mistakes of the weak learners. It again uses a randomized subset of the samples as well as randomized subset of features (The ratio of the samples and the features to be used can be set by us. It can range from 0 to 1. If it is close to 0 then we will be creating a model which will suffer from bias error and if it is close to 1 then we will be creating a model which will be suffering from overfitting or variance error). 
 In boosting, the weak learners are the decision trees. So after a decision tree is trained, the following decision will give greater weights to the data points which were wrongly classified or wrongly predicted by the first decision tree. The third decision tree will greater weights to the data points misclassified by the second decision tree and so on. The model tries to learn the relationship between the dependent and the independent variables and improves its predictions in subsequent iterations. 
 Since boosting tries to rectify the mistakes done in the previous iteration; it can over fit when the number of iterations is very large because after a certain point of time it will try to memorize the relationship between the dependent and the independent variable and fail to generalize well.  
 
-Stacking  
+<b>Stacking</b>  
 
 In this type of ensemble models we are stacking different types of models on top of another. We are going to see how stacking works below.  
 
