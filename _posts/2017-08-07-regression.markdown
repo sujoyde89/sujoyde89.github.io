@@ -86,7 +86,8 @@ This regression is a combination of Lasso and Ridge regression. It combines the 
 
 Here in the case of elastic net regression, we can say that there are two alphas. α1 can be said to control the L1(Lasso) regularization capability and α2 can be said to be the L2(Ridge) regularization capability. Elastic net tries to combine the beauty of both worlds of Lasso and Ridge regression. In case of elastic net regression, the cost function is as below.  
 
-Cost function = <sub>i=1</sub>∑<sup>i=N</sup>(y-yhat)<sup>2</sup> + α1 (<sub>i=1</sub>∑<sup>i=K</sup> | ai |) + α2 (<sub>i=1</sub>∑<sup>i=K</sup>a<sub>i</sub> )<sup>2</sup>. The cost function here contains the loss function, the L1 regularization function and the L2 regularization function.  
+Cost function = <sub>i=1</sub>∑<sup>i=N</sup>(y-yhat)<sup>2</sup> + α1 (<sub>i=1</sub>∑<sup>i=K</sup> | ai |) + α2 (<sub>i=1</sub>∑<sup>i=K</sup>a<sub>i</sub> )<sup>2</sup>.  
+The cost function here contains the loss function, the L1 regularization function and the L2 regularization function.  
 
 Till now from simple linear regression, multivariate and polynomial regression, we have extended our understanding to  :-  
 
