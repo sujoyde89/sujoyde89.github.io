@@ -71,7 +71,8 @@ Ridge regression does not remove correlated features. It includes all the featur
 
 Lasso regression is another type of regression which computes the cost function in a different way. The cost function in case of lasso regression is as below.  
 
-Cost function = <sub>i=1</sub>∑<sup>i=N</sup> (y-yhat)<sup>2</sup> + α (<sub>i=1</sub>∑<sup>i=K</sup> | a<sub>i</sub> |) .  
+Cost function = <sub>i=1</sub>∑<sup>i=N</sup> (y-yhat)<sup>2</sup> + α (<sub>i=1</sub>∑<sup>i=K</sup> | a<sub>i</sub> |).  
+
 Here again, N is the number of samples and K is the number of features based on which the model predicts the dependent variables. The cost function here contains the loss function and the L1 regularization function.  
 
 Just like ridge regression we have added another term to the sum of squared errors. It is the sum of the absolute values of the coefficients of the dependent variables multiplied by α. Remember α is a hyper parameter of the model which can take on any value. Lasso regression also works well in case of correlated variables. In case of say 3 correlated variables it will remove 2 of the correlated variables and include only one coefficient in the model. The features that it will remove in case of correlated features is non deterministic in nature i.e. we cannot control which features it will remove in case of correlated features. Lasso regression can also be used as a feature selection tool since we can remove the features whose coefficients are zero in the model. Lasso regression works very well when there are lots of features in the dataset and we want to remove some features.  
