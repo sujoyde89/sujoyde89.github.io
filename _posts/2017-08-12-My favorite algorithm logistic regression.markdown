@@ -1,5 +1,3 @@
-<b>My favorite algorithm Logistic Regression!!!!</b>  
-
 The beauty of logistic regression is that it can squeeze any number to the range between 0 and 1. Remember the expression of linear regression is yhat = ax + c. The logistic regression builds on this expression. Even though it takes help from this regression expression, it is essentially a classification algorithm.  
 
 When it comes to classification, this is a very powerful algorithm which can give tough competition to the likes of more complex algorithms like bagging, boosting algorithms etc.  

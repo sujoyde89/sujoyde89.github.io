@@ -1,5 +1,3 @@
-<b>Let us try to remove the confusion around the confusion matrix!!!!</b>  
-
 Normally a confusion matrix can be built for multiple classes but it is most prevalently used for binary classes. A confusion matrix normally looks like the table below.  
 
 <table>
