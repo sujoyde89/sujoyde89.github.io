@@ -1,5 +1,3 @@
-<b>Let us talk about ensembling!!!!</b>  
-
 What!! You have never done ensembling before.  
 
 Wait let us just check it out? You had done a regression problem last week and you averaged the results of the Lasso, Ridge, Xgboost. Congrats you have successfully created an ensemble model.  
