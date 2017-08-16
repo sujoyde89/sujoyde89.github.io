@@ -74,3 +74,5 @@ This new set of features is fed as input to the models in the second stacked lay
 Stacked models have always been proven to be capable of increasing the overall model performance.  
 
 In case of stacking, the number of models in the first layer of stacking can be increased as per the requirement; the number of layers in stacked model can also be increased. Stacking is computationally expensive so be careful in stacking with so many layers.
+
+Please bookmark me if you found this helpful.

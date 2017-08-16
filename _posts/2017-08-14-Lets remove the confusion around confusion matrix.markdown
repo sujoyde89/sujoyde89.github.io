@@ -74,5 +74,6 @@ Example – Recall is the metric used when we want to identify fraud cases in se
 
 •	F1 score = (2 * precision * recall)/ (precision + recall).  
 
-F1 score is the harmonic mean of precision and recall. F1 score is used when we want to use the best of both worlds i.e. when we want to decrease false negatives as well as false positives. 
+F1 score is the harmonic mean of precision and recall. F1 score is used when we want to use the best of both worlds i.e. when we want to decrease false negatives as well as false positives.  
+
 Please bookmark me if you found this helpful
