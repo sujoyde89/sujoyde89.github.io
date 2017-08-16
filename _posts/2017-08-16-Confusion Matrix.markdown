@@ -2,12 +2,50 @@
 
 Normally a confusion matrix can be built for multiple classes but it is most prevalently used for binary classes. A confusion matrix normally looks like the table below.  
 
-
 <table>
-<tr><th>Predicted value of y</th></tr>
-	0	1
-Actual value of y	0	TN	FP
-	1	FN	TP
+<tbody>
+<tr>
+<td colspan="2" rowspan="2" width="162">
+<p>&nbsp;</p>
+</td>
+<td colspan="2" width="150">
+<p>Predicted value of y</p>
+</td>
+</tr>
+<tr>
+<td width="60">
+<p>0</p>
+</td>
+<td width="90">
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2" width="120">
+<p>Actual value of y</p>
+</td>
+<td width="42">
+<p>0</p>
+</td>
+<td width="60">
+<p>TN</p>
+</td>
+<td width="90">
+<p>FP</p>
+</td>
+</tr>
+<tr>
+<td width="42">
+<p>1</p>
+</td>
+<td width="60">
+<p>FN</p>
+</td>
+<td width="90">
+<p>TP</p>
+</td>
+</tr>
+</tbody>
 </table>
 
 Where,  

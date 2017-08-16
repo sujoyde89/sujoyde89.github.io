@@ -23,7 +23,7 @@ The above equation is p = 1 /(1+ e <sup>–(a<sub>1</sub> * x<sub>1</sub> + a<su
 
 The graph of the sigmoid function is as shown below. As we can see the equation is squeezing the numbers to the range of 0 and 1.  
 
-<img src="/assets/lr.png">
+<img src="/assets/lr.png" height="300" width="500">
  
 There is one thing that we should remember; Logistic regression is a classification algorithm and so it outputs probabilities and based on a threshold, it buckets the probabilities into classes.  
 
