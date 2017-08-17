@@ -70,7 +70,7 @@ Ridge regression does not remove correlated features. It includes all the featur
 
 Lasso regression is another type of regression which computes the cost function in a different way. The cost function in case of lasso regression is as below.  
 
-Cost function = <sub>i=1</sub>∑<sup>i=N</sup> (y-yhat)<sup>2</sup> + α (<sub>i=1</sub>∑<sup>i=K</sup> | a<sub>i</sub> |)  
+Cost function = <sub>i=1</sub>∑<sup>i=N</sup> (y-yhat)<sup>2</sup> + α (<sub>i=1</sub>∑<sup>i=K</sup>|a<sub>i</sub> |)  
 
 Here again, N is the number of samples and K is the number of features based on which the model predicts the dependent variables. The cost function here contains the loss function and the L1 regularization function.  
 
