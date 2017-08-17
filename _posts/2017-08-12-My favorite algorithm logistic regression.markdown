@@ -4,7 +4,8 @@ When it comes to classification, this is a very powerful algorithm which can giv
 
 If p is probability of getting a certain class then 1-p becomes the probability of getting the other class and we can express the natural logarithm of ratio of p to (1-p) as a regression equation. The equation can be written as below if we decide to include only two features in the regression equation; x<sub>1</sub> and x<sub>2</sub> having coefficients as a1 and a2.  
 
-ln (p/(1-p)) = a<sub>1</sub> * x<sub>1</sub> + a<sub>2</sub> * x<sub>2</sub> + c. This equation can be modified as below.
+ln (p/(1-p)) = a<sub>1</sub> * x<sub>1</sub> + a<sub>2</sub> * x<sub>2</sub> + c. This equation can be modified as below.  
+
 p/(1-p) = e<sup>a<sub>1</sub> * x<sub>1</sub> + a<sub>2</sub> * x<sub>2</sub> + c</sup>  
 
 p = e<sup>a<sub>1</sub> * x<sub>1</sub> + a<sub>2</sub> * x<sub>2</sub> + c</sup> – p(e<sup>a<sub>1</sub> * x<sub>1</sub> + a<sub>2</sub> * x<sub>2</sub> + c</sup>)  
