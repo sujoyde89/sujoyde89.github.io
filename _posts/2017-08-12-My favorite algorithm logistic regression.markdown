@@ -41,7 +41,7 @@ Lastly on an end note on logistic regression, when your peers would be using com
 The cost function for logistic regression is given below:-  
 
 Cost function for logistic regression = -1/m {<sub>i=1</sub>∑<sup>i=m</sup> y<sub>i</sub> log (h * x<sub>i</sub> )+ (1-y<sub>i</sub>) log (1-h * x<sub>i</sub>)}  
-Where h * x<sub>i</sub> is the equation for logistic regression = 1 /(1+ e <sup>–(a<sub>1</sub> * x<sub>1</sub> + a<sub>2</sub> * x<sub>2</sub> + c</sup>)), yi is the class of the target variable.  
+Where h * x<sub>i</sub> is the equation for logistic regression = 1 /(1+ e <sup>–(a<sub>1</sub> * x<sub>1</sub> + a<sub>2</sub> * x<sub>2</sub> + c</sup>)), y<sub>i</sub> is the class of the target variable.  
 
 The cost function given above is also refered to as the logarithmic loss function and it is tried to minimize when developing the model.
 
